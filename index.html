@@ -109,13 +109,24 @@
       .grid{grid-template-columns:1fr; }
       aside{order:2}
     }
+    
+    .logo img {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(122, 162, 255, 0.5);
+    }
   </style>
 </head>
 <body>
   <div class="wrap" role="main">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden="true">LW</div>
+        <div class="logo" aria-hidden="true" style="background: linear-gradient(135deg,#ffd36b,#7aa2ff); display:flex; align-items:center; justify-content:center;">
+          <img src="images/favicon.png" alt="LW" style="width:90%;height:90%;border-radius:8px;object-fit:cover;">
+        </div>
         <div>
           <h1>Lunetsu Works</h1>
           <div class="subtitle">Independent visual novel studio — official platform directory</div>
