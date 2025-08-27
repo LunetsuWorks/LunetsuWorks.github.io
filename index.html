@@ -1,3 +1,239 @@
-<!DOCTYPE html>
-<h1>Lunetsu Works</h1>
-<p>Follow us on Mastodon: @lunetsuworks@lunetsuworks.com</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lunetsu Works — Official</title>
+
+  <!-- Reddit verification meta (optional, alternate to reddit-verification.txt) -->
+  <meta name="reddit-verification" content="r/LunetsuWorks verification: u/koureidev 2025-08-27">
+
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#111317;
+      --muted:#9aa4b2;
+      --accent:#7aa2ff;
+      --white:#eceff4;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#091019 0%, #071018 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:28px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      line-height:1.45;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:980px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:10px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background: linear-gradient(135deg,#ffd36b,#7aa2ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#071018;
+      font-weight:700;
+      font-size:22px;
+    }
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:13px;margin-top:6px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 300px;
+      gap:22px;
+      margin-top:20px;
+    }
+
+    main{min-width:0}
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:16px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    h2{margin:0 0 10px 0;font-size:16px}
+    p.lead{color:var(--muted);margin:0 0 12px 0}
+
+    ul.links{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    ul.links li{display:flex;align-items:center;justify-content:space-between;padding:10px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02)}
+    .label{display:flex;gap:10px;align-items:center}
+    .label .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block}
+    .muted{color:var(--muted);font-size:13px}
+    a.link{color:var(--white);text-decoration:none;max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
+    .btn{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);padding:6px 8px;font-size:13px;border-radius:8px;color:var(--muted);
+      cursor:pointer;
+    }
+    .small{font-size:13px;color:var(--muted)}
+
+    aside .meta{display:flex;flex-direction:column;gap:10px}
+    .meta .row{display:flex;gap:10px;align-items:center;justify-content:space-between}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr; }
+      aside{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">LW</div>
+        <div>
+          <h1>Lunetsu Works</h1>
+          <div class="subtitle">Independent visual novel studio — official platform directory</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card" aria-labelledby="official">
+          <h2 id="official">Official platform directory</h2>
+          <p class="lead">This page lists the official Lunetsu Works channels, grouped by purpose. Links below point to verified studio accounts and distribution hubs.</p>
+
+          <h3 style="margin-top:12px;margin-bottom:8px;color:var(--muted);font-size:13px">Video & live</h3>
+          <ul class="links" aria-label="Video and live links">
+            <li>
+              <div class="label">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <div style="font-weight:600">YouTube</div>
+                  <div class="muted">Trailers, devlogs, and stream archives</div>
+                </div>
+              </div>
+              <div><a class="link" href="https://www.youtube.com/@LunetsuWorks" target="_blank" rel="noopener">youtube.com/@LunetsuWorks</a></div>
+            </li>
+
+            <li>
+              <div class="label">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <div style="font-weight:600">Twitch</div>
+                  <div class="muted">Live development sessions and Q&amp;A</div>
+                </div>
+              </div>
+              <div><a class="link" href="https://www.twitch.tv/lunetsuworks" target="_blank" rel="noopener">twitch.tv/lunetsuworks</a></div>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:14px;margin-bottom:8px;color:var(--muted);font-size:13px">Visual & social</h3>
+          <ul class="links" aria-label="Visual and social links">
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">Instagram & Threads</div><div class="muted">Artwork, short updates, studio notes</div></div></div>
+              <div><a class="link" href="https://instagram.com/lunetsuworks" target="_blank" rel="noopener">instagram.com/lunetsuworks</a></div>
+            </li>
+
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">TikTok</div><div class="muted">Short-form clips and timelapses</div></div></div>
+              <div><a class="link" href="https://www.tiktok.com/@lunetsuworks" target="_blank" rel="noopener">tiktok.com/@lunetsuworks</a></div>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:14px;margin-bottom:8px;color:var(--muted);font-size:13px">Updates & community</h3>
+          <ul class="links" aria-label="Updates and community links">
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">X / Bluesky / Mastodon</div><div class="muted">Short updates, progress GIFs and community engagement</div></div></div>
+              <div style="text-align:right">
+                <a class="link" href="https://x.com/LunetsuWorks" target="_blank" rel="noopener">x.com/LunetsuWorks</a><br>
+                <a class="link" href="https://bsky.app/profile/lunetsuworks.bsky.social" target="_blank" rel="noopener" style="display:block;margin-top:4px">bsky.app/profile/lunetsuworks.bsky.social</a><br>
+                <a class="link" href="https://mastodon.social/@lunetsuworks" target="_blank" rel="noopener" style="display:block;margin-top:4px">mastodon.social/@lunetsuworks</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">Itch & Steam</div><div class="muted">Playable builds, demos, and game pages</div></div></div>
+              <div style="text-align:right">
+                <a class="link" href="https://lunetsuworks.itch.io/" target="_blank" rel="noopener">lunetsuworks.itch.io</a><br>
+                <a class="link" href="https://steamcommunity.com/id/lunetsuworks/" target="_blank" rel="noopener" style="display:block;margin-top:4px">steamcommunity.com/id/lunetsuworks</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">Reddit & Discord</div><div class="muted">Detailed devlogs, community discussion and real-time chat</div></div></div>
+              <div style="text-align:right">
+                <a class="link" href="https://www.reddit.com/r/LunetsuWorks/" target="_blank" rel="noopener">reddit.com/r/LunetsuWorks/</a><br>
+                <a class="link" href="https://discord.gg/HeErgzs92Y" target="_blank" rel="noopener" style="display:block;margin-top:4px">discord.gg/HeErgzs92Y</a>
+              </div>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:14px;margin-bottom:8px;color:var(--muted);font-size:13px">Support & contact</h3>
+          <ul class="links" aria-label="Support links">
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">Ko-fi</div><div class="muted">Support the studio</div></div></div>
+              <div><a class="link" href="https://ko-fi.com/lunetsuworks" target="_blank" rel="noopener">ko-fi.com/lunetsuworks</a></div>
+            </li>
+            <li>
+              <div class="label"><span class="dot"></span><div><div style="font-weight:600">Official website</div><div class="muted">Primary domain and contact</div></div></div>
+              <div><a class="link" href="https://www.lunetsuworks.com" target="_blank" rel="noopener">lunetsuworks.com</a></div>
+            </li>
+          </ul>
+
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="meta">
+            <div class="row">
+              <div style="font-weight:600">Studio</div>
+              <div class="muted">Lunetsu Works</div>
+            </div>
+            <div class="row">
+              <div style="font-weight:600">Founder</div>
+              <div class="muted">Kourei (u/koureidev)</div>
+            </div>
+            <div class="row">
+              <div style="font-weight:600">Contact</div>
+              <div class="muted">contact@lunetsuworks.com</div>
+            </div>
+            <div class="row">
+              <div style="font-weight:600">Last update</div>
+              <div class="muted">Aug 27, 2025</div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="small">This page is an official directory of Lunetsu Works platforms. Links point to verified studio channels.</div>
+          </footer>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
